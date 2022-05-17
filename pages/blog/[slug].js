@@ -6,6 +6,7 @@ import Link from "next/link"
 import Layout from "@/components/Layout"
 import CategoryLabel from "@/components/CategoryLabel"
 import{ marked} from "marked"
+import Image from "next/image"
 
 
 
@@ -22,11 +23,11 @@ export default function PostPage ({frontmatter:{title, category, date, cover_ima
                {category }
            </CategoryLabel>
            </div>
-           <img src={cover_image} alt="" className="w-full rounded"/>
+           <Image src={cover_image} alt="" className="w-full rounded"/>
            
            <div className="flex justify-between items-center bg-gray-100 p-2 my-8 rounded">
                <div className="flex items-center">
-                   <img src={author_image} alt="" className="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block" />
+                   <Image src={author_image} alt="" className="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block" />
                    <h4>{author}</h4>
                </div>
                <div className="mr-4">
