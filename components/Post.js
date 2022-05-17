@@ -34,7 +34,7 @@ export default function Post({post, compact}) {
         <div className="flex items-center">
             <Image src={post.frontmatter.author_image}
              height={40}
-             width={60}
+             width={40}
             alt=""
             className="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block"/>
             <h3 className="text-gray-700 font-bold">
