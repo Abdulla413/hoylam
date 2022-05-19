@@ -13,8 +13,9 @@ export default function Search() {
       } else {
         const res = await fetch(`/api/search?q=${searchTerm}`)
         const { results } = await res.json()
+        console.log(results , "results in Search component")
         setSearchResults(results)
-        console.log(results, "from Search component results")
+       
       }
     }
     getResults()
